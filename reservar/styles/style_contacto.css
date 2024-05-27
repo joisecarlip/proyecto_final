@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Calibri", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #3866f2;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #2b4cc8;
+    border-radius: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 100px;
+    gap: 10px;
+    max-width: 1000px;
+    margin: 120px auto 0; /* Ajuste para dejar espacio debajo del encabezado fijo */
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: #000;
+}
+
+.caja h1 {
+    text-align: left;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    color: #000;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.data p {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.data p i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: #081b29;
+    transition: .1s;
+}
+
+.links a i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.entrada {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.entrada input, 
+.entrada textarea {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transition: .3s;
+    color: #fff;
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.3);
+    border: 2px solid #c9c0c0;
+    
+}
+
+.entrada input::placeholder,
+.entrada textarea::placeholder {
+    color: #a3a3a3;
+}
+
+.entrada input:focus::placeholder,
+.entrada textarea:focus::placeholder {
+    color: transparent;
+}
+
+.entrada input:focus,
+.entrada textarea:focus {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    animation: shake .2s;
+}
+
+.entrada i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: rgba(255, 255, 255, 0.3);
+    transition: .3s;
+}
+
+.entrada input:focus ~ i {
+    color: rgb(255, 255, 255);
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: rgb(172, 167, 167);
+    color: #000;
+    border: none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 2px solid #c9c0c0;
+}
+
+form button:hover,
+.links a:hover {
+    background: rgb(27, 26, 26);
+    color: #fff;
+    box-shadow: 0 0 25px 0 #ffffff;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .caja h1 {
+        font-size: 1.5rem;
+    }
+}

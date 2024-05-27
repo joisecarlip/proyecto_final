@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.pago {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px 0;
+}
+
+.form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.form h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+}
+
+.form p {
+    color: #575757;
+    margin: 1em 0;
+}
+
+.qr-code {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.file-input {
+    position: relative;
+    overflow: hidden;
+    margin-top: 1.5em;
+}
+
+.file-input input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.file-input label {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #d1cbcb;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.file-input label:hover {
+    background-color: #274bbf;
+}
+
+.boton {
+    margin-top: 2em;
+}
+
+.boton button {
+    width: 100%;
+    background: #3866f2;
+    color: #fff;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.boton button:hover {
+    background: #274bbf;
+}
