@@ -1,0 +1,126 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    width: 90%;
+    margin: 30px auto; 
+}
+
+header {
+    background-color: #3866f2;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin-left: 20px; 
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; 
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.form-container {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 800px;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none;
+}
+
+.form-container.active {
+    display: flex;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+
+form {
+    flex: 1;
+    padding: 2em;
+}
+
+form h1 {
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.inp {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+    position: relative;
+    --color: #5757577e;
+}
+
+.inp label {
+    color: #3866f2;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    left: 5px;
+}
+
+.inp input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: 0.6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.inp button {
+    width: 100%;
+    background: #3866f2;
+    color: #fff;
+    padding: .8em 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+}
