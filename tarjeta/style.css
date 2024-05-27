@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Calibri", sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #3866f2;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.header .container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    max-height: 50px;
+    float: left;
+}
+
+.nav {
+    float: right;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-left: 20px; 
+}
+
+.nav a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #2b4cc8;
+    border-radius: 5px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center; /* Centra los formularios horizontalmente */
+    gap: 20%; /* Espacio entre los formularios */
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px 0;
+}
+
+.form, .recarga {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.form h2, .recarga h2 {
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.grupo-registro, .grupo-recarga {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.grupo-registro, .grupo-recarga {
+    position: relative;
+    --color: #5757577e;
+}
+
+.grupo-registro input, .grupo-recarga input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: 0.6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.grupo-registro label, .grupo-recarga label {
+    color: #3866f2;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    left: 5px;
+}
+
+.boton button {
+    width: 100%;
+    background: #3866f2;
+    color: #fff;
+    padding: .8em 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.data {
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    background-color: rgb(245, 242, 242);
+    padding: 2px 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgba(50, 50, 50, 0.77);
+}
+
+.data table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+}
+
+.data table tr th, .data table tr td {
+    border: 1px solid black;
+    padding: 10px; /* Ajusta el padding según sea necesario */
+    text-align: center;
+    vertical-align: middle;
+    width: 25%; /* Ajusta el ancho según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
+    font-weight: 400;
+    letter-spacing: 0.25px;
+}
